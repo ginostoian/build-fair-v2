@@ -1,19 +1,21 @@
-# ShipFast SaaS Boilerplate - Cursor Rules
+# Build Fair - Cursor Rules
 
-You are an expert full-stack developer working on ShipFast, a Next.js SaaS boilerplate with Stripe integration, NextAuth, MongoDB, and modern UI components.
+You are an expert full-stack developer working on Build Fair, a Next.js website for a service that checks customers builder quotes to ensure they are fair.
 
 ## Project Overview
+
 - **Tech Stack**: Next.js 15, React 19, NextAuth v5 (beta), MongoDB, Mongoose, Stripe, Tailwind CSS, DaisyUI, Resend
 - **Architecture**: App Router, API Routes, Server Components, Client Components
 - **Authentication**: NextAuth with Google OAuth and Email providers
 - **Database**: MongoDB with Mongoose ODM
 - **Payments**: Stripe Checkout and Customer Portal
 - **Email**: Resend for transactional emails
-- **UI**: Tailwind CSS with DaisyUI components
+- **UI**: Tailwind CSS with ShadCN components
 
 ## Code Style & Conventions
 
 ### File Structure
+
 - Use App Router structure (`app/` directory)
 - API routes in `app/api/[endpoint]/route.js`
 - Components in `components/` directory
@@ -22,6 +24,7 @@ You are an expert full-stack developer working on ShipFast, a Next.js SaaS boile
 - Configuration in `config.js`
 
 ### Naming Conventions
+
 - **Components**: PascalCase (e.g., `ButtonCheckout.js`, `HeaderBlog.js`)
 - **API Routes**: kebab-case directories with `route.js` files
 - **Utilities**: camelCase (e.g., `connectMongo`, `createCheckout`)
@@ -29,6 +32,7 @@ You are an expert full-stack developer working on ShipFast, a Next.js SaaS boile
 - **Variables**: camelCase
 
 ### Component Patterns
+
 - Use `"use client"` directive for client components
 - Import config from `@/config` for app-wide settings
 - Use absolute imports with `@/` prefix
@@ -36,6 +40,7 @@ You are an expert full-stack developer working on ShipFast, a Next.js SaaS boile
 - Include descriptive comments for complex components
 
 ### API Route Structure
+
 ```javascript
 import { NextResponse } from "next/server";
 import { auth } from "@/libs/auth";
@@ -44,7 +49,7 @@ export async function POST(req) {
   try {
     const session = await auth();
     const body = await req.json();
-    
+
     // Validation
     if (!body.requiredField) {
       return NextResponse.json(
@@ -52,9 +57,9 @@ export async function POST(req) {
         { status: 400 }
       );
     }
-    
+
     // Logic here
-    
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error(error);
@@ -67,6 +72,7 @@ export async function POST(req) {
 ```
 
 ### Database Patterns
+
 - Use Mongoose for MongoDB operations
 - Always call `connectMongo()` before database operations
 - Use schema validation and plugins
@@ -74,12 +80,14 @@ export async function POST(req) {
 - Use the `toJSON` plugin for clean API responses
 
 ### Authentication
+
 - Use `auth()` from `@/libs/auth` to get session
 - Check authentication in API routes when needed
 - Use `session?.user?.id` to access user ID
 - Redirect unauthenticated users to `config.auth.loginUrl`
 
 ### Stripe Integration
+
 - Use `createCheckout()` from `@/libs/stripe` for payments
 - Handle webhooks in `app/api/webhook/stripe/route.js`
 - Store `customerId` and `priceId` in user model
@@ -88,18 +96,21 @@ export async function POST(req) {
 ## Best Practices
 
 ### Error Handling
+
 - Always wrap async operations in try-catch blocks
 - Return appropriate HTTP status codes
 - Log errors to console for debugging
 - Provide user-friendly error messages
 
 ### Security
+
 - Validate all inputs in API routes
 - Use environment variables for sensitive data
 - Implement proper CORS headers where needed
 - Sanitize user inputs before database operations
 
 ### Performance
+
 - Use Server Components by default
 - Only use Client Components when necessary (interactivity, hooks)
 - Implement proper loading states
@@ -107,14 +118,17 @@ export async function POST(req) {
 - Leverage MongoDB indexes for queries
 
 ### UI/UX
-- Use DaisyUI classes for consistent styling
-- Implement loading states with DaisyUI spinners
+
+- Use Tailwind and classes for consistent styling and ShadCN
+- Implement loading states with ShadCn spinners
 - Use semantic HTML elements
 - Ensure responsive design with Tailwind breakpoints
 - Include proper accessibility attributes
 
 ## Environment Variables
+
 Required environment variables:
+
 - `NEXTAUTH_SECRET`
 - `NEXTAUTH_URL`
 - `MONGODB_URI`
@@ -128,6 +142,7 @@ Required environment variables:
 ## Common Patterns
 
 ### Client Component with API Call
+
 ```javascript
 "use client";
 import { useState } from "react";
@@ -135,7 +150,7 @@ import apiClient from "@/libs/api";
 
 const ComponentName = () => {
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const handleAction = async () => {
     setIsLoading(true);
     try {
@@ -147,9 +162,9 @@ const ComponentName = () => {
       setIsLoading(false);
     }
   };
-  
+
   return (
-    <button 
+    <button
       className="btn btn-primary"
       onClick={handleAction}
       disabled={isLoading}
@@ -165,6 +180,7 @@ const ComponentName = () => {
 ```
 
 ### Mongoose Model
+
 ```javascript
 import mongoose from "mongoose";
 import toJSON from "./plugins/toJSON";
@@ -189,6 +205,7 @@ export default mongoose.models.ModelName || mongoose.model("ModelName", schema);
 ```
 
 ## Configuration
+
 - All app configuration is centralized in `config.js`
 - Use `config.appName`, `config.domainName`, etc. throughout the app
 - Stripe plans are defined in `config.stripe.plans`
@@ -196,6 +213,7 @@ export default mongoose.models.ModelName || mongoose.model("ModelName", schema);
 - Theme settings in `config.colors`
 
 ## Testing & Development
+
 - Use `npm run dev` for development
 - Use `npm run build` for production builds
 - Follow conventional commit messages
@@ -203,10 +221,11 @@ export default mongoose.models.ModelName || mongoose.model("ModelName", schema);
 - Use MongoDB Compass for database inspection
 
 ## Deployment Considerations
+
 - Set all required environment variables
 - Configure Stripe webhooks endpoint
 - Set up MongoDB Atlas connection
 - Configure domain for NextAuth
 - Set up Resend domain for emails
 
-Remember to always check the existing codebase patterns before implementing new features to maintain consistency. 
+Remember to always check the existing codebase patterns before implementing new features to maintain consistency.
