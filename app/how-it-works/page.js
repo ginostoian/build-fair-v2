@@ -18,7 +18,7 @@ import {
 export const metadata = getSEOTags({
   title: `How It Works | ${config.appName}`,
   description:
-    "Learn how Build Fair analyzes your builder quotes to ensure you're getting fair pricing on your UK building project.",
+    "Learn how Build Fair analyzes your builder quotes to ensure you&apos;re getting fair pricing on your UK building project.",
   canonicalUrlRelative: "/how-it-works",
 });
 
@@ -71,8 +71,8 @@ export default function HowItWorksPage() {
                 </div>
                 <h3 className="text-xl font-bold">Upload Your Quote</h3>
                 <p className="text-muted-foreground">
-                  Upload your builder's quote securely. We accept PDFs, images,
-                  and documents.
+                  Upload your builder&apos;s quote securely. We accept PDFs,
+                  images, and documents.
                 </p>
               </CardContent>
             </Card>
@@ -242,7 +242,7 @@ export default function HowItWorksPage() {
                       Step 3: Receive Your Report
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Within 24-72 hours (depending on your tier), you'll
+                      Within 24-72 hours (depending on your tier), you&apos;ll
                       receive a comprehensive PDF report including:
                     </p>
                     <div className="space-y-3 text-muted-foreground">
@@ -406,7 +406,7 @@ export default function HowItWorksPage() {
             </Button>
           </Link>
           <p className="text-sm text-muted-foreground mt-4">
-            100% money-back guarantee if you're not satisfied
+            100% money-back guarantee if you&apos;re not satisfied
           </p>
         </div>
       </section>

@@ -111,14 +111,14 @@ export default function Page() {
                 </Badge>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-                  Don't Get Ripped Off By{" "}
+                  Don&apos;t Get Ripped Off By{" "}
                   <span className="text-primary">Builder Quotes</span>
                 </h1>
 
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Upload your builder quote and get expert analysis within 24
-                  hours. Know if you're paying a fair price before committing to
-                  thousands in work.
+                  hours. Know if you&apos;re paying a fair price before
+                  committing to thousands in work.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -265,8 +265,8 @@ export default function Page() {
                   </div>
                   <h3 className="text-xl font-bold">Upload Your Quote</h3>
                   <p className="text-muted-foreground">
-                    Simply upload your builder's quote as a PDF or image. All
-                    information is kept confidential and secure.
+                    Simply upload your builder&apos;s quote as a PDF or image.
+                    All information is kept confidential and secure.
                   </p>
                 </CardContent>
               </Card>
@@ -329,7 +329,7 @@ export default function Page() {
                 The Problems We Solve
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Don't fall victim to unfair pricing. Get the confidence you
+                Don&apos;t fall victim to unfair pricing. Get the confidence you
                 need.
               </p>
             </div>
@@ -607,7 +607,7 @@ export default function Page() {
               </CardContent>
             </Card>
 
-            {/* What's Included */}
+            {/* What&apos;s Included */}
             <div className="max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold text-center mb-8">
                 Every Plan Includes
@@ -652,7 +652,7 @@ export default function Page() {
                       Money-Back Guarantee
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      100% refund if you're not satisfied with the analysis
+                      100% refund if you&apos;re not satisfied with the analysis
                     </p>
                   </div>
                 </div>
@@ -745,7 +745,7 @@ export default function Page() {
                   </div>
                   <p className="text-muted-foreground mb-6">
                     "The report spotted that materials were marked up 45% above
-                    retail prices. The builder couldn't justify it when I
+                    retail prices. The builder couldn&apos;t justify it when I
                     confronted him. Ended up finding a more honest tradesman."
                   </p>
                   <div className="flex items-center gap-3">
@@ -776,9 +776,9 @@ export default function Page() {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "Best £159 I've ever spent. The analysis showed the quote
-                    was actually fair, which gave me confidence to proceed.
-                    Peace of mind is priceless when spending £30k on a
+                    "Best £159 I&apos;ve ever spent. The analysis showed the
+                    quote was actually fair, which gave me confidence to
+                    proceed. Peace of mind is priceless when spending £30k on a
                     renovation project."
                   </p>
                   <div className="flex items-center gap-3">
@@ -828,7 +828,8 @@ export default function Page() {
                 <AccordionContent className="text-muted-foreground">
                   We guarantee delivery within 24 hours of receiving your quote.
                   Most analyses are completed within 12 hours during business
-                  days. You'll receive an email as soon as your report is ready.
+                  days. You&apos;ll receive an email as soon as your report is
+                  ready.
                 </AccordionContent>
               </AccordionItem>
 
@@ -843,8 +844,8 @@ export default function Page() {
                   We analyze quotes for all types of building work including
                   extensions, loft conversions, kitchen and bathroom
                   renovations, new builds, roofing, landscaping, and general
-                  home improvements. If you're unsure, just submit it and we'll
-                  let you know.
+                  home improvements. If you&apos;re unsure, just submit it and
+                  we&apos;ll let you know.
                 </AccordionContent>
               </AccordionItem>
 
@@ -857,10 +858,10 @@ export default function Page() {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   Absolutely! Knowing your quote is fair gives you the
-                  confidence to proceed without doubt. You'll also get insights
-                  on the timeline, materials quality, and what to watch out for
-                  during the project. Plus, we offer a money-back guarantee if
-                  you're not satisfied.
+                  confidence to proceed without doubt. You&apos;ll also get
+                  insights on the timeline, materials quality, and what to watch
+                  out for during the project. Plus, we offer a money-back
+                  guarantee if you&apos;re not satisfied.
                 </AccordionContent>
               </AccordionItem>
 
@@ -899,12 +900,13 @@ export default function Page() {
                 className="bg-white px-6 rounded-lg border"
               >
                 <AccordionTrigger className="text-left font-semibold">
-                  What if I'm not satisfied with the analysis?
+                  What if I&apos;m not satisfied with the analysis?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  We offer a 100% money-back guarantee. If you're not satisfied
-                  with the analysis for any reason, just let us know within 7
-                  days and we'll issue a full refund, no questions asked.
+                  We offer a 100% money-back guarantee. If you&apos;re not
+                  satisfied with the analysis for any reason, just let us know
+                  within 7 days and we&apos;ll issue a full refund, no questions
+                  asked.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -918,7 +920,7 @@ export default function Page() {
               Limited Time Offer
             </Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Don't Sign That Quote Yet
+              Don&apos;t Sign That Quote Yet
             </h2>
             <p className="text-xl mb-8 text-blue-100">
               Join 500+ UK homeowners who avoided overpaying on their builds.

@@ -29,7 +29,7 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission - we'll implement the actual API call later
+    // Simulate form submission - we&apos;ll implement the actual API call later
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
@@ -68,8 +68,8 @@ export default function ContactPage() {
           <Badge className="mb-4">Get In Touch</Badge>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl text-muted-foreground">
-            Have a question? We're here to help. Send us a message and we'll
-            respond as soon as possible.
+            Have a question? We&apos;re here to help. Send us a message and
+            we&apos;ll respond as soon as possible.
           </p>
         </div>
       </section>
@@ -142,8 +142,8 @@ export default function ContactPage() {
                         Message sent successfully!
                       </div>
                       <p className="text-sm text-green-700">
-                        We've received your message and will get back to you
-                        soon.
+                        We&apos;ve received your message and will get back to
+                        you soon.
                       </p>
                     </div>
                   </div>
@@ -270,7 +270,8 @@ export default function ContactPage() {
                   </Button>
 
                   <p className="text-xs text-center text-muted-foreground">
-                    We'll get back to you within 24 hours during business days.
+                    We&apos;ll get back to you within 24 hours during business
+                    days.
                   </p>
                 </form>
               </CardContent>

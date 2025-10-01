@@ -13,7 +13,7 @@ import { ArrowLeft } from "lucide-react";
 export const metadata = getSEOTags({
   title: `FAQ | ${config.appName}`,
   description:
-    "Frequently asked questions about Build Fair's builder quote analysis service. Get answers about pricing, turnaround times, and our process.",
+    "Frequently asked questions about Build Fair&apos;s builder quote analysis service. Get answers about pricing, turnaround times, and our process.",
   canonicalUrlRelative: "/faq",
 });
 
@@ -67,9 +67,9 @@ export default function FAQPage() {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   Build Fair is an independent quote analysis service for UK
-                  homeowners. We review builder quotes to ensure you're getting
-                  fair pricing before you commit to thousands of pounds in
-                  building work. Our team of qualified quantity surveyors and
+                  homeowners. We review builder quotes to ensure you&apos;re
+                  getting fair pricing before you commit to thousands of pounds
+                  in building work. Our team of qualified quantity surveyors and
                   experienced builders analyze your quotes against market rates
                   and industry standards.
                 </AccordionContent>
@@ -100,7 +100,7 @@ export default function FAQPage() {
                   Are you affiliated with any builders or suppliers?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  No, we are completely independent. We don't receive
+                  No, we are completely independent. We don&apos;t receive
                   commissions or kickbacks from builders, suppliers, or
                   manufacturers. Our only source of revenue is from customers
                   paying for our analysis service, which means our loyalty is
@@ -127,7 +127,7 @@ export default function FAQPage() {
                     <li>• Landscaping and groundwork</li>
                     <li>• General renovations and refurbishments</li>
                   </ul>
-                  If you're unsure whether we can help with your specific
+                  If you&apos;re unsure whether we can help with your specific
                   project, just contact us!
                 </AccordionContent>
               </AccordionItem>
@@ -156,8 +156,8 @@ export default function FAQPage() {
                     <li>• Medium projects (£15k-£50k): 24-48 hours</li>
                     <li>• Large projects (£50k-£150k): up to 72 hours</li>
                   </ul>
-                  Most analyses are completed faster than these maximums. You'll
-                  receive an email as soon as your report is ready.
+                  Most analyses are completed faster than these maximums.
+                  You&apos;ll receive an email as soon as your report is ready.
                 </AccordionContent>
               </AccordionItem>
 
@@ -169,15 +169,17 @@ export default function FAQPage() {
                   What information do I need to provide?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  You'll need to provide:
+                  You&apos;ll need to provide:
                   <ul className="mt-2 space-y-1">
-                    <li>• Your builder's quote (PDF, image, or document)</li>
+                    <li>
+                      • Your builder&apos;s quote (PDF, image, or document)
+                    </li>
                     <li>• Project location (city/town)</li>
                     <li>• Type of work being quoted</li>
                     <li>• Any specific concerns you have (optional)</li>
                   </ul>
-                  The more detailed your builder's quote, the more comprehensive
-                  our analysis can be.
+                  The more detailed your builder&apos;s quote, the more
+                  comprehensive our analysis can be.
                 </AccordionContent>
               </AccordionItem>
 
@@ -210,7 +212,7 @@ export default function FAQPage() {
                     </li>
                     <li>• Line-by-line cost breakdown and commentary</li>
                     <li>• Comparison to market rates in your area</li>
-                    <li>• Red flags or concerns we've identified</li>
+                    <li>• Red flags or concerns we&apos;ve identified</li>
                     <li>• Specific negotiation tips and strategies</li>
                     <li>• Items that may be missing from the quote</li>
                     <li>• Timeline assessment</li>
@@ -227,13 +229,13 @@ export default function FAQPage() {
                   What if my quote is actually fair?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  That's great news! Knowing your quote is fair gives you the
-                  confidence to proceed without doubt or second-guessing. Our
-                  report will still provide valuable insights about the project,
-                  timeline, and things to watch out for during the work. Many
-                  customers tell us that peace of mind is worth the analysis fee
-                  on its own. Plus, we offer a money-back guarantee if you're
-                  not satisfied.
+                  That&apos;s great news! Knowing your quote is fair gives you
+                  the confidence to proceed without doubt or second-guessing.
+                  Our report will still provide valuable insights about the
+                  project, timeline, and things to watch out for during the
+                  work. Many customers tell us that peace of mind is worth the
+                  analysis fee on its own. Plus, we offer a money-back guarantee
+                  if you&apos;re not satisfied.
                 </AccordionContent>
               </AccordionItem>
 
@@ -245,9 +247,9 @@ export default function FAQPage() {
                   Can you help me find a builder?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  We focus solely on quote analysis and don't recommend specific
-                  builders to maintain our independence. However, our report
-                  will give you the knowledge and confidence to evaluate
+                  We focus solely on quote analysis and don&apos;t recommend
+                  specific builders to maintain our independence. However, our
+                  report will give you the knowledge and confidence to evaluate
                   multiple builders effectively and make an informed choice.
                 </AccordionContent>
               </AccordionItem>
@@ -289,9 +291,9 @@ export default function FAQPage() {
                   How does the 30% multi-quote discount work?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  If you're comparing multiple builder quotes (which we highly
-                  recommend!), you'll receive 30% off the second and any
-                  subsequent quote analyses when submitted together. For
+                  If you&apos;re comparing multiple builder quotes (which we
+                  highly recommend!), you&apos;ll receive 30% off the second and
+                  any subsequent quote analyses when submitted together. For
                   example, if you have two £20,000 quotes, the first would be
                   £159 and the second only £111.30. The discount is
                   automatically applied at checkout.
@@ -320,9 +322,9 @@ export default function FAQPage() {
                   Do you offer refunds?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  Yes! We offer a 100% money-back guarantee. If you're not
+                  Yes! We offer a 100% money-back guarantee. If you&apos;re not
                   satisfied with our analysis for any reason, just let us know
-                  within 7 days and we'll issue a full refund, no questions
+                  within 7 days and we&apos;ll issue a full refund, no questions
                   asked. See our{" "}
                   <Link
                     href="/refund-policy"
@@ -343,8 +345,8 @@ export default function FAQPage() {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   For quotes above £150,000, please contact us directly at{" "}
-                  {config.resend.supportEmail}. We'll provide a custom quote
-                  based on the complexity and scale of your project.
+                  {config.resend.supportEmail}. We&apos;ll provide a custom
+                  quote based on the complexity and scale of your project.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -391,7 +393,7 @@ export default function FAQPage() {
                 <AccordionContent className="text-muted-foreground">
                   Not unless you tell them. We operate with complete
                   confidentiality. Many customers choose to share our findings
-                  with their builder as part of negotiations, but that's
+                  with their builder as part of negotiations, but that&apos;s
                   entirely your decision. We never contact builders directly.
                 </AccordionContent>
               </AccordionItem>
@@ -406,8 +408,8 @@ export default function FAQPage() {
                 <AccordionContent className="text-muted-foreground">
                   We use Stripe, a leading payment processor trusted by millions
                   of businesses worldwide. We never see or store your full card
-                  details – they're handled entirely by Stripe's secure,
-                  PCI-compliant systems.
+                  details – they&apos;re handled entirely by Stripe&apos;s
+                  secure, PCI-compliant systems.
                 </AccordionContent>
               </AccordionItem>
 
@@ -460,7 +462,7 @@ export default function FAQPage() {
                 <AccordionContent className="text-muted-foreground">
                   We write our reports to be clear and easy to understand, but
                   if you have any questions, just email us at{" "}
-                  {config.resend.supportEmail}. We're happy to clarify any
+                  {config.resend.supportEmail}. We&apos;re happy to clarify any
                   points or provide additional guidance.
                 </AccordionContent>
               </AccordionItem>
@@ -475,8 +477,8 @@ export default function FAQPage() {
                 <AccordionContent className="text-muted-foreground">
                   We need to see the actual quote to analyze it. However, once
                   you receive it from your builder, you can upload it
-                  immediately and we'll have your analysis ready within 24-72
-                  hours.
+                  immediately and we&apos;ll have your analysis ready within
+                  24-72 hours.
                 </AccordionContent>
               </AccordionItem>
 
@@ -488,9 +490,10 @@ export default function FAQPage() {
                   Do you offer bulk discounts for property developers?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  Yes! If you're a property developer, landlord, or managing
-                  agent who needs regular quote analysis, please contact us at{" "}
-                  {config.resend.supportEmail} to discuss volume pricing.
+                  Yes! If you&apos;re a property developer, landlord, or
+                  managing agent who needs regular quote analysis, please
+                  contact us at {config.resend.supportEmail} to discuss volume
+                  pricing.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -500,8 +503,8 @@ export default function FAQPage() {
           <div className="text-center bg-white p-8 rounded-lg border">
             <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
             <p className="text-muted-foreground mb-6">
-              Can't find the answer you're looking for? Get in touch with our
-              friendly team.
+              Can&apos;t find the answer you&apos;re looking for? Get in touch
+              with our friendly team.
             </p>
             <Link
               href="/contact"

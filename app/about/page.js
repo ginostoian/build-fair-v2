@@ -16,7 +16,7 @@ import {
 export const metadata = getSEOTags({
   title: `About Us | ${config.appName}`,
   description:
-    "Learn about Build Fair's mission to protect UK homeowners from unfair builder quotes through expert analysis.",
+    "Learn about Build Fair&apos;s mission to protect UK homeowners from unfair builder quotes through expert analysis.",
   canonicalUrlRelative: "/about",
 });
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
             Protecting UK Homeowners From Unfair Building Quotes
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            We're on a mission to bring transparency to the UK construction
+            We&apos;re on a mission to bring transparency to the UK construction
             industry, one quote at a time.
           </p>
         </div>
@@ -68,13 +68,13 @@ export default function AboutPage() {
                   costs, and unfair pricing, we realized that homeowners needed
                   an independent expert in their corner – someone who could
                   analyze builder quotes with a professional eye and tell them
-                  the truth about what they're being charged.
+                  the truth about what they&apos;re being charged.
                 </p>
                 <p>
                   With over 50 years of combined experience in the UK
                   construction industry, our team has reviewed thousands of
                   building projects. We know what fair pricing looks like, and
-                  we're passionate about helping homeowners make informed
+                  we&apos;re passionate about helping homeowners make informed
                   decisions about their biggest investments.
                 </p>
               </div>
@@ -124,8 +124,8 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Independence</h3>
                 <p className="text-sm text-muted-foreground">
-                  We're not affiliated with any builders. Our only loyalty is to
-                  our customers and the truth.
+                  We&apos;re not affiliated with any builders. Our only loyalty
+                  is to our customers and the truth.
                 </p>
               </CardContent>
             </Card>
@@ -224,8 +224,8 @@ export default function AboutPage() {
         <div className="container max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Join hundreds of UK homeowners who've avoided overpaying on their
-            building projects.
+            Join hundreds of UK homeowners who&apos;ve avoided overpaying on
+            their building projects.
           </p>
           <Link href="/#pricing">
             <Button

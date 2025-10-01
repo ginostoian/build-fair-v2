@@ -249,7 +249,7 @@ export default function PricingPage() {
             </CardContent>
           </Card>
 
-          {/* What's Included */}
+          {/* What&apos;s Included */}
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-center mb-8">
               Every Plan Includes
@@ -292,7 +292,7 @@ export default function PricingPage() {
                 <div>
                   <div className="font-semibold mb-1">Money-Back Guarantee</div>
                   <p className="text-sm text-muted-foreground">
-                    100% refund if you're not satisfied with the analysis
+                    100% refund if you&apos;re not satisfied with the analysis
                   </p>
                 </div>
               </div>
@@ -336,8 +336,8 @@ export default function PricingPage() {
                 </h3>
                 <p className="text-sm text-muted-foreground">
                   For quotes above £150,000, please contact us directly at{" "}
-                  {config.resend.supportEmail}. We'll provide a custom quote for
-                  your analysis based on the project complexity.
+                  {config.resend.supportEmail}. We&apos;ll provide a custom
+                  quote for your analysis based on the project complexity.
                 </p>
               </CardContent>
             </Card>
@@ -347,8 +347,8 @@ export default function PricingPage() {
                 <h3 className="font-bold mb-2">Do you offer refunds?</h3>
                 <p className="text-sm text-muted-foreground">
                   Yes! We offer a 100% money-back guarantee within 7 days if
-                  you're not satisfied with our analysis. No questions asked.
-                  See our{" "}
+                  you&apos;re not satisfied with our analysis. No questions
+                  asked. See our{" "}
                   <Link
                     href="/refund-policy"
                     className="text-blue-600 hover:underline"
@@ -367,8 +367,8 @@ export default function PricingPage() {
                 </h3>
                 <p className="text-sm text-muted-foreground">
                   When you submit 2 or more quotes together in the same order,
-                  you'll receive 30% off the second and any subsequent quotes.
-                  The discount is automatically applied at checkout.
+                  you&apos;ll receive 30% off the second and any subsequent
+                  quotes. The discount is automatically applied at checkout.
                 </p>
               </CardContent>
             </Card>
