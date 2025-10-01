@@ -11,7 +11,6 @@ import {
   ShieldCheck,
   CheckCircle2,
   Clock,
-  Mail,
   AlertCircle,
 } from "lucide-react";
 
@@ -364,8 +363,8 @@ export default function HowItWorksPage() {
                       • Materials marked up excessively (standard is 10-15%)
                     </li>
                     <li>
-                      • Vague descriptions like "preliminaries" or "sundries"
-                      with high costs
+                      • Vague descriptions like &quot;preliminaries&quot; or
+                      &quot;sundries&quot; with high costs
                     </li>
                     <li>
                       • Missing essential items (scaffolding, skip hire,
