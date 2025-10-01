@@ -712,9 +712,10 @@ export default function Page() {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "Build Fair saved me £3,200! The builder quoted £18,500 for
-                    a kitchen refurb but Build Fair showed the labour costs were
-                    inflated. I renegotiated and got it done for £15,300."
+                    &quot;Build Fair saved me £3,200! The builder quoted £18,500
+                    for a kitchen refurb but Build Fair showed the labour costs
+                    were inflated. I renegotiated and got it done for
+                    £15,300.&quot;
                   </p>
                   <div className="flex items-center gap-3">
                     <Avatar>
@@ -744,9 +745,10 @@ export default function Page() {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "The report spotted that materials were marked up 45% above
-                    retail prices. The builder couldn&apos;t justify it when I
-                    confronted him. Ended up finding a more honest tradesman."
+                    &quot;The report spotted that materials were marked up 45%
+                    above retail prices. The builder couldn&apos;t justify it
+                    when I confronted him. Ended up finding a more honest
+                    tradesman.&quot;
                   </p>
                   <div className="flex items-center gap-3">
                     <Avatar>
@@ -776,10 +778,10 @@ export default function Page() {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "Best £159 I&apos;ve ever spent. The analysis showed the
-                    quote was actually fair, which gave me confidence to
+                    &quot;Best £159 I&apos;ve ever spent. The analysis showed
+                    the quote was actually fair, which gave me confidence to
                     proceed. Peace of mind is priceless when spending £30k on a
-                    renovation project."
+                    renovation project.&quot;
                   </p>
                   <div className="flex items-center gap-3">
                     <Avatar>
