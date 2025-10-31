@@ -8,12 +8,13 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
-  ArrowLeft,
   Mail,
   MessageSquare,
   Clock,
   CheckCircle2,
 } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -48,26 +49,17 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-blue-50">
-      {/* Header */}
-      <header className="border-b bg-white">
-        <div className="container max-w-7xl mx-auto px-4 py-4">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
-        </div>
-      </header>
-
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-gradient-to-b from-white to-slate-50">
       {/* Hero Section */}
-      <section className="py-20">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <Badge className="mb-4">Get In Touch</Badge>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl text-muted-foreground">
+      <section className="py-20 pt-28">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Badge className="mb-4 bg-slate-100 text-slate-700 border-slate-200 px-4 py-1.5">
+            Get In Touch
+          </Badge>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-slate-900">Contact Us</h1>
+          <p className="text-xl text-slate-600 leading-relaxed">
             Have a question? We&apos;re here to help. Send us a message and
             we&apos;ll respond as soon as possible.
           </p>
@@ -76,7 +68,7 @@ export default function ContactPage() {
 
       {/* Contact Info Cards */}
       <section className="pb-16">
-        <div className="container max-w-6xl mx-auto px-4">
+        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {/* Email */}
             <Card>
@@ -98,39 +90,39 @@ export default function ContactPage() {
             </Card>
 
             {/* Response Time */}
-            <Card>
+            <Card className="border-2 border-slate-200 hover:border-slate-300 transition-all hover:shadow-lg bg-white">
               <CardContent className="pt-8 text-center">
-                <div className="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                  <Clock className="h-8 w-8 text-green-600" />
+                <div className="mx-auto w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                  <Clock className="h-8 w-8 text-emerald-600" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Response Time</h3>
-                <p className="text-sm text-muted-foreground mb-3">
+                <h3 className="text-lg font-bold mb-2 text-slate-900">Response Time</h3>
+                <p className="text-sm text-slate-600 mb-3 leading-relaxed">
                   We typically respond within
                 </p>
-                <p className="text-sm font-semibold">24 hours</p>
+                <p className="text-sm font-semibold text-slate-900">24 hours</p>
               </CardContent>
             </Card>
 
             {/* Support */}
-            <Card>
+            <Card className="border-2 border-slate-200 hover:border-slate-300 transition-all hover:shadow-lg bg-white">
               <CardContent className="pt-8 text-center">
-                <div className="mx-auto w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                  <MessageSquare className="h-8 w-8 text-purple-600" />
+                <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <MessageSquare className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Support Hours</h3>
-                <p className="text-sm text-muted-foreground mb-3">
+                <h3 className="text-lg font-bold mb-2 text-slate-900">Support Hours</h3>
+                <p className="text-sm text-slate-600 mb-3 leading-relaxed">
                   Monday - Friday
                 </p>
-                <p className="text-sm font-semibold">9:00 AM - 6:00 PM GMT</p>
+                <p className="text-sm font-semibold text-slate-900">9:00 AM - 6:00 PM GMT</p>
               </CardContent>
             </Card>
           </div>
 
           {/* Contact Form */}
           <div className="max-w-2xl mx-auto">
-            <Card className="shadow-xl">
+            <Card className="shadow-xl border-2 border-slate-200 bg-white">
               <CardContent className="pt-8">
-                <h2 className="text-2xl font-bold mb-6 text-center">
+                <h2 className="text-2xl font-bold mb-6 text-center text-slate-900">
                   Send Us a Message
                 </h2>
 
@@ -237,7 +229,7 @@ export default function ContactPage() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full h-12 text-base"
+                    className="w-full h-12 text-base bg-slate-900 hover:bg-slate-800 text-white shadow-md"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
@@ -269,7 +261,7 @@ export default function ContactPage() {
                     )}
                   </Button>
 
-                  <p className="text-xs text-center text-muted-foreground">
+                  <p className="text-xs text-center text-slate-600">
                     We&apos;ll get back to you within 24 hours during business
                     days.
                   </p>
@@ -282,23 +274,27 @@ export default function ContactPage() {
 
       {/* FAQ Reference */}
       <section className="py-16 bg-white">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-slate-900">
             Looking for Quick Answers?
           </h2>
-          <p className="text-muted-foreground mb-6">
+          <p className="text-slate-600 mb-6 leading-relaxed">
             Check out our FAQ page for instant answers to common questions.
           </p>
-          <Link href="/faq">
-            <Button
-              variant="outline"
-              size="lg"
-            >
+          <Button
+            variant="outline"
+            size="lg"
+            className="border-2 border-slate-300 hover:bg-slate-50"
+            asChild
+          >
+            <Link href="/faq">
               Visit FAQ
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </>
   );
 }

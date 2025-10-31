@@ -6,12 +6,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   ShieldCheck,
-  ArrowLeft,
+  ArrowRight,
   Award,
   Users,
   Target,
   Heart,
 } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata = getSEOTags({
   title: `About Us | ${config.appName}`,
@@ -22,28 +24,20 @@ export const metadata = getSEOTags({
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-blue-50">
-      {/* Header */}
-      <header className="border-b bg-white">
-        <div className="container max-w-7xl mx-auto px-4 py-4">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
-        </div>
-      </header>
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-gradient-to-b from-white to-slate-50">
 
       {/* Hero Section */}
-      <section className="py-20">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <Badge className="mb-4">About Build Fair</Badge>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+      <section className="py-20 pt-28">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Badge className="mb-4 bg-slate-100 text-slate-700 border-slate-200 px-4 py-1.5">
+            About Build Fair
+          </Badge>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-slate-900">
             Protecting UK Homeowners From Unfair Building Quotes
           </h1>
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
             We&apos;re on a mission to bring transparency to the UK construction
             industry, one quote at a time.
           </p>
@@ -52,11 +46,11 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <section className="py-16">
-        <div className="container max-w-4xl mx-auto px-4">
-          <Card>
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="border-2 border-slate-200 shadow-lg bg-white">
             <CardContent className="pt-8">
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-              <div className="prose prose-lg max-w-none space-y-4 text-muted-foreground">
+              <div className="prose prose-lg max-w-none space-y-4 text-slate-700 leading-relaxed">
                 <p>
                   Build Fair was founded in 2024 by a team of experienced
                   quantity surveyors and building professionals who were tired
@@ -85,17 +79,21 @@ export default function AboutPage() {
 
       {/* Our Values */}
       <section className="py-16">
-        <div className="container max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
+        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-900">
+            Our Values
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Value 1 */}
-            <Card>
+            <Card className="border-2 border-slate-200 hover:border-slate-300 transition-all hover:shadow-lg bg-white">
               <CardContent className="pt-8 text-center">
                 <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                   <ShieldCheck className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Transparency</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-xl font-bold mb-3 text-slate-900">
+                  Transparency
+                </h3>
+                <p className="text-sm text-slate-600 leading-relaxed">
                   We believe in complete honesty about pricing, methods, and
                   what homeowners should expect from their builders.
                 </p>
@@ -149,21 +147,23 @@ export default function AboutPage() {
 
       {/* Our Mission */}
       <section className="py-16">
-        <div className="container max-w-4xl mx-auto px-4">
-          <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="bg-gradient-to-br from-slate-50 to-slate-100 border-2 border-slate-200 shadow-lg">
             <CardContent className="pt-8">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-600 rounded-lg flex-shrink-0">
+                <div className="p-3 bg-slate-900 rounded-lg flex-shrink-0">
                   <Target className="h-8 w-8 text-white" />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-                  <p className="text-lg text-muted-foreground mb-4">
+                  <h2 className="text-2xl font-bold mb-4 text-slate-900">
+                    Our Mission
+                  </h2>
+                  <p className="text-lg text-slate-700 mb-4 leading-relaxed">
                     To empower UK homeowners with expert knowledge and
                     independent analysis, ensuring they never overpay for
                     building work again.
                   </p>
-                  <p className="text-muted-foreground">
+                  <p className="text-slate-700 leading-relaxed">
                     We envision a future where unfair pricing in the
                     construction industry is eliminated, builders compete on
                     quality and service rather than information asymmetry, and
@@ -221,22 +221,28 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-16">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-xl text-muted-foreground mb-8">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-900">
+            Ready to Get Started?
+          </h2>
+          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
             Join hundreds of UK homeowners who&apos;ve avoided overpaying on
             their building projects.
           </p>
-          <Link href="/#pricing">
-            <Button
-              size="lg"
-              className="text-lg h-14 px-8"
-            >
+          <Button
+            size="lg"
+            className="text-lg h-14 px-8 bg-slate-900 hover:bg-slate-800 text-white shadow-lg"
+            asChild
+          >
+            <Link href="/pricing">
               Get Your Quote Analyzed
-            </Button>
-          </Link>
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
         </div>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </>
   );
 }

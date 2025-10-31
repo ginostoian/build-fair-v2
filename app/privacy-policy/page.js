@@ -30,25 +30,22 @@ export const metadata = getSEOTags({
   canonicalUrlRelative: "/privacy-policy",
 });
 
-import { ArrowLeft } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 const PrivacyPolicy = () => {
   return (
-    <main className="max-w-xl mx-auto">
-      <div className="p-5">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back
-        </Link>
-        <h1 className="text-3xl font-extrabold pb-6">
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-gradient-to-b from-white to-slate-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pt-28">
+        <h1 className="text-4xl sm:text-5xl font-bold pb-8 text-slate-900">
           Privacy Policy for {config.appName}
         </h1>
 
+        <div className="bg-white rounded-xl border-2 border-slate-200 shadow-lg p-8">
         <pre
-          className="leading-relaxed whitespace-pre-wrap"
+          className="leading-relaxed whitespace-pre-wrap text-slate-700"
           style={{ fontFamily: "sans-serif" }}
         >
           {`Last Updated: September 30, 2025
@@ -124,8 +121,11 @@ For all other inquiries, please visit our Contact Us page on the Website.
 
 By using Build Fair, you consent to the terms of this Privacy Policy.`}
         </pre>
+        </div>
       </div>
-    </main>
+      </main>
+      <SiteFooter />
+    </>
   );
 };
 

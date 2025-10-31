@@ -5,14 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
-  ArrowLeft,
   Upload,
   FileSearch,
   ShieldCheck,
   CheckCircle2,
   Clock,
   AlertCircle,
+  ArrowRight,
 } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata = getSEOTags({
   title: `How It Works | ${config.appName}`,
@@ -23,28 +25,19 @@ export const metadata = getSEOTags({
 
 export default function HowItWorksPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-blue-50">
-      {/* Header */}
-      <header className="border-b bg-white">
-        <div className="container max-w-7xl mx-auto px-4 py-4">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
-        </div>
-      </header>
-
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-gradient-to-b from-white to-slate-50">
       {/* Hero Section */}
-      <section className="py-20">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <Badge className="mb-4">Simple Process</Badge>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+      <section className="py-20 pt-28">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Badge className="mb-4 bg-slate-100 text-slate-700 border-slate-200 px-4 py-1.5">
+            Simple Process
+          </Badge>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-slate-900">
             How Build Fair Works
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-slate-600 leading-relaxed">
             Get expert analysis of your builder quote in three simple steps.
             From upload to detailed report in under 24 hours.
           </p>
@@ -53,23 +46,23 @@ export default function HowItWorksPage() {
 
       {/* Steps Overview */}
       <section className="py-16">
-        <div className="container max-w-6xl mx-auto px-4">
+        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Step 1 */}
-            <Card className="relative pt-12 border-2">
+            <Card className="relative pt-16 border-2 border-slate-200 hover:border-slate-300 transition-all hover:shadow-lg bg-white">
               <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                <div className="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-xl">
                   1
                 </div>
               </div>
-              <CardContent className="text-center space-y-4">
+              <CardContent className="text-center space-y-5 pb-8">
                 <div className="flex justify-center">
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <Upload className="h-10 w-10 text-blue-600" />
+                  <div className="p-5 bg-slate-50 rounded-2xl">
+                    <Upload className="h-10 w-10 text-slate-700" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold">Upload Your Quote</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-bold text-slate-900">Upload Your Quote</h3>
+                <p className="text-slate-600 leading-relaxed">
                   Upload your builder&apos;s quote securely. We accept PDFs,
                   images, and documents.
                 </p>
@@ -77,20 +70,20 @@ export default function HowItWorksPage() {
             </Card>
 
             {/* Step 2 */}
-            <Card className="relative pt-12 border-2">
+            <Card className="relative pt-16 border-2 border-slate-200 hover:border-slate-300 transition-all hover:shadow-lg bg-white">
               <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                <div className="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-xl">
                   2
                 </div>
               </div>
-              <CardContent className="text-center space-y-4">
+              <CardContent className="text-center space-y-5 pb-8">
                 <div className="flex justify-center">
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <FileSearch className="h-10 w-10 text-blue-600" />
+                  <div className="p-5 bg-slate-50 rounded-2xl">
+                    <FileSearch className="h-10 w-10 text-slate-700" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold">Expert Analysis</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-bold text-slate-900">Expert Analysis</h3>
+                <p className="text-slate-600 leading-relaxed">
                   Our team analyzes every line item against market rates and
                   industry standards.
                 </p>
@@ -98,20 +91,20 @@ export default function HowItWorksPage() {
             </Card>
 
             {/* Step 3 */}
-            <Card className="relative pt-12 border-2">
+            <Card className="relative pt-16 border-2 border-slate-200 hover:border-slate-300 transition-all hover:shadow-lg bg-white">
               <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                <div className="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-xl">
                   3
                 </div>
               </div>
-              <CardContent className="text-center space-y-4">
+              <CardContent className="text-center space-y-5 pb-8">
                 <div className="flex justify-center">
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <ShieldCheck className="h-10 w-10 text-blue-600" />
+                  <div className="p-5 bg-slate-50 rounded-2xl">
+                    <ShieldCheck className="h-10 w-10 text-slate-700" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold">Get Your Report</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-bold text-slate-900">Get Your Report</h3>
+                <p className="text-slate-600 leading-relaxed">
                   Receive a comprehensive report with our verdict and
                   recommendations.
                 </p>
@@ -123,24 +116,24 @@ export default function HowItWorksPage() {
 
       {/* Detailed Process */}
       <section className="py-16">
-        <div className="container max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-900">
             The Detailed Process
           </h2>
 
           <div className="space-y-8">
             {/* Step 1 Detailed */}
-            <Card>
+            <Card className="border-2 border-slate-200 shadow-lg bg-white">
               <CardContent className="pt-8">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-600 rounded-lg flex-shrink-0">
+                  <div className="p-3 bg-slate-900 rounded-lg flex-shrink-0">
                     <Upload className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-4">
+                    <h3 className="text-2xl font-bold mb-4 text-slate-900">
                       Step 1: Upload Your Quote
                     </h3>
-                    <div className="space-y-3 text-muted-foreground">
+                    <div className="space-y-3 text-slate-700 leading-relaxed">
                       <div className="flex items-start gap-2">
                         <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
                         <p>Choose your pricing tier based on the quote value</p>
@@ -173,21 +166,21 @@ export default function HowItWorksPage() {
             </Card>
 
             {/* Step 2 Detailed */}
-            <Card>
+            <Card className="border-2 border-slate-200 shadow-lg bg-white">
               <CardContent className="pt-8">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-600 rounded-lg flex-shrink-0">
+                  <div className="p-3 bg-slate-900 rounded-lg flex-shrink-0">
                     <FileSearch className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-4">
+                    <h3 className="text-2xl font-bold mb-4 text-slate-900">
                       Step 2: Expert Analysis
                     </h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-slate-700 mb-4 leading-relaxed">
                       Your quote is assigned to one of our qualified quantity
                       surveyors or experienced builders who will:
                     </p>
-                    <div className="space-y-3 text-muted-foreground">
+                    <div className="space-y-3 text-slate-700 leading-relaxed">
                       <div className="flex items-start gap-2">
                         <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
                         <p>
@@ -230,21 +223,21 @@ export default function HowItWorksPage() {
             </Card>
 
             {/* Step 3 Detailed */}
-            <Card>
+            <Card className="border-2 border-slate-200 shadow-lg bg-white">
               <CardContent className="pt-8">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-600 rounded-lg flex-shrink-0">
+                  <div className="p-3 bg-slate-900 rounded-lg flex-shrink-0">
                     <ShieldCheck className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-4">
+                    <h3 className="text-2xl font-bold mb-4 text-slate-900">
                       Step 3: Receive Your Report
                     </h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-slate-700 mb-4 leading-relaxed">
                       Within 24-72 hours (depending on your tier), you&apos;ll
                       receive a comprehensive PDF report including:
                     </p>
-                    <div className="space-y-3 text-muted-foreground">
+                    <div className="space-y-3 text-slate-700 leading-relaxed">
                       <div className="flex items-start gap-2">
                         <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
                         <p>
@@ -298,8 +291,8 @@ export default function HowItWorksPage() {
 
       {/* Timeline */}
       <section className="py-16 bg-white">
-        <div className="container max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-900">
             Expected Timeline
           </h2>
 
@@ -342,12 +335,12 @@ export default function HowItWorksPage() {
 
       {/* What We Look For */}
       <section className="py-16">
-        <div className="container max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-900">
             What We Look For
           </h2>
 
-          <Card className="bg-gradient-to-br from-red-50 to-orange-50 border-red-200 mb-6">
+          <Card className="bg-gradient-to-br from-amber-50 to-red-50 border-2 border-amber-200 mb-6 shadow-lg">
             <CardContent className="pt-6">
               <div className="flex items-start gap-4">
                 <AlertCircle className="h-8 w-8 text-red-600 flex-shrink-0 mt-1" />
@@ -355,7 +348,7 @@ export default function HowItWorksPage() {
                   <h3 className="text-xl font-bold mb-3">
                     Common Red Flags We Identify:
                   </h3>
-                  <ul className="space-y-2 text-muted-foreground">
+                  <ul className="space-y-2 text-slate-700 leading-relaxed">
                     <li>
                       • Labour costs inflated by more than 20% above market rate
                     </li>
@@ -389,26 +382,30 @@ export default function HowItWorksPage() {
 
       {/* CTA */}
       <section className="py-16">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-900">
             Ready to Analyze Your Quote?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
             Get expert analysis within 24-72 hours. Starting from just £69.
           </p>
-          <Link href="/#pricing">
-            <Button
-              size="lg"
-              className="text-lg h-14 px-8"
-            >
+          <Button
+            size="lg"
+            className="text-lg h-14 px-8 bg-slate-900 hover:bg-slate-800 text-white shadow-lg"
+            asChild
+          >
+            <Link href="/pricing">
               Get Started Now
-            </Button>
-          </Link>
-          <p className="text-sm text-muted-foreground mt-4">
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+          <p className="text-sm text-slate-600 mt-4">
             100% money-back guarantee if you&apos;re not satisfied
           </p>
         </div>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </>
   );
 }

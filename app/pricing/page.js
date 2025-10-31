@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ArrowLeft, CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata = getSEOTags({
   title: `Pricing | ${config.appName}`,
@@ -16,28 +18,20 @@ export const metadata = getSEOTags({
 
 export default function PricingPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-blue-50">
-      {/* Header */}
-      <header className="border-b bg-white">
-        <div className="container max-w-7xl mx-auto px-4 py-4">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Link>
-        </div>
-      </header>
+    <>
+      <SiteHeader />
+      <main className="min-h-screen bg-gradient-to-b from-white to-slate-50">
 
       {/* Hero Section */}
-      <section className="py-20">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <Badge className="mb-4">Transparent Pricing</Badge>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+      <section className="py-20 pt-28">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Badge className="mb-4 bg-slate-100 text-slate-700 border-slate-200 px-4 py-1.5">
+            Transparent Pricing
+          </Badge>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-slate-900">
             Simple, Fair Pricing
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-slate-600 leading-relaxed">
             Pay based on your quote value. The bigger the project, the more
             comprehensive the analysis.
           </p>
@@ -46,20 +40,20 @@ export default function PricingPage() {
 
       {/* Pricing Tiers */}
       <section className="py-8">
-        <div className="container max-w-7xl mx-auto px-4">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {/* Tier 1 */}
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-xl">
+            <Card className="border-2 border-slate-200 hover:border-slate-300 transition-all hover:shadow-xl bg-white">
               <CardContent className="pt-8">
                 <div className="text-center mb-6">
                   <Badge
                     variant="outline"
-                    className="mb-4"
+                    className="mb-4 bg-slate-50 border-slate-200"
                   >
                     Small Projects
                   </Badge>
-                  <div className="text-4xl font-bold mb-2">£69</div>
-                  <p className="text-sm text-muted-foreground font-medium">
+                  <div className="text-5xl font-bold mb-2 text-slate-900">£69</div>
+                  <p className="text-sm text-slate-600 font-medium">
                     For quotes up to £15,000
                   </p>
                 </div>
@@ -102,9 +96,9 @@ export default function PricingPage() {
             </Card>
 
             {/* Tier 2 - Featured */}
-            <Card className="border-2 border-primary shadow-2xl relative">
+            <Card className="border-2 border-slate-900 shadow-2xl relative bg-white">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <Badge className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-1">
+                <Badge className="bg-slate-900 text-white px-4 py-1.5 font-semibold border-0">
                   Most Popular
                 </Badge>
               </div>
@@ -112,12 +106,12 @@ export default function PricingPage() {
                 <div className="text-center mb-6">
                   <Badge
                     variant="outline"
-                    className="mb-4 border-primary"
+                    className="mb-4 border-slate-900 bg-slate-50"
                   >
                     Medium Projects
                   </Badge>
-                  <div className="text-5xl font-bold mb-2">£159</div>
-                  <p className="text-sm text-muted-foreground font-medium">
+                  <div className="text-6xl font-bold mb-2 text-slate-900">£159</div>
+                  <p className="text-sm text-slate-600 font-medium">
                     For quotes £15,000 - £50,000
                   </p>
                 </div>
@@ -164,17 +158,17 @@ export default function PricingPage() {
             </Card>
 
             {/* Tier 3 */}
-            <Card className="border-2 hover:border-primary transition-all hover:shadow-xl">
+            <Card className="border-2 border-slate-200 hover:border-slate-300 transition-all hover:shadow-xl bg-white">
               <CardContent className="pt-8">
-                <div className="text-center mb-6">
+                 <div className="text-center mb-6">
                   <Badge
                     variant="outline"
-                    className="mb-4"
+                    className="mb-4 bg-slate-50 border-slate-200"
                   >
                     Large Projects
                   </Badge>
-                  <div className="text-4xl font-bold mb-2">£299</div>
-                  <p className="text-sm text-muted-foreground font-medium">
+                  <div className="text-5xl font-bold mb-2 text-slate-900">£299</div>
+                  <p className="text-sm text-slate-600 font-medium">
                     For quotes £50,000 - £150,000
                   </p>
                 </div>
@@ -222,7 +216,7 @@ export default function PricingPage() {
           </div>
 
           {/* Multi-quote Discount */}
-          <Card className="max-w-2xl mx-auto bg-gradient-to-br from-orange-50 to-yellow-50 border-2 border-orange-200 mb-16">
+          <Card className="max-w-3xl mx-auto bg-gradient-to-br from-amber-50 to-amber-100/50 border-2 border-amber-300 mb-16">
             <CardContent className="pt-6">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-orange-100 rounded-lg flex-shrink-0">
@@ -325,8 +319,8 @@ export default function PricingPage() {
 
       {/* FAQ */}
       <section className="py-16 bg-white">
-        <div className="container max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Pricing FAQs</h2>
+        <div className="container max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-slate-900">Pricing FAQs</h2>
 
           <div className="space-y-6">
             <Card>
@@ -390,22 +384,27 @@ export default function PricingPage() {
 
       {/* CTA */}
       <section className="py-16">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-xl text-muted-foreground mb-8">
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-900">
+            Ready to Get Started?
+          </h2>
+          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
             Upload your quote and get expert analysis within 24-72 hours.
           </p>
-          <Link href="/#pricing">
-            <Button
-              size="lg"
-              className="text-lg h-14 px-8"
-            >
+          <Button
+            size="lg"
+            className="text-lg h-14 px-8 bg-slate-900 hover:bg-slate-800 text-white shadow-lg"
+            asChild
+          >
+            <Link href="/pricing">
               Choose Your Plan
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </>
   );
 }
